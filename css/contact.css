@@ -1,42 +1,102 @@
-  @import url("style.css");
-  :root {
-    --bkg: #eff9ea;
-    --color-primary: #202c44;
-    --color-secondary: #1887b8;
-    --color-btn: #202c44;
-    --color-dark: #181711;
-    --color-ligth:white;
-    --color-succes: #0a9d49;
-    --color-warning : #e8c60c;
-    --color-danger: #f0042b;
-   }
-  /* ==========================================
+/* ==========================================
+  ================= IMPORTS ================= */
+@import url("style.css");
+
+
+
+
+/* ==========================================
+  ============== CSS VARIABLES ============= */
+:root {
+  --bkg: #eff9ea;
+  --color-primary: #202c44;
+  --color-secondary: #1887b8;
+  --color-btn: #202c44;
+  --color-dark: #181711;
+  --color-ligth: white;
+  --color-succes: #0a9d49;
+  --color-warning: #e8c60c;
+  --color-danger: #f0042b;
+}
+
+
+
+
+/* ==========================================
   ============ CONTACT PAGE ================= */
-  
-  .card-form {
-    margin-top: 5%;
-    height: 70vh;
-    padding: 0 5%;
-    background-color: rgba(255, 255, 255, 0.252);
-  }
-  
-  .other-contact {
-    margin-top: 2%;
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.576);
-  }
-  
-  
-  .other-contact a img {
-    background-color: var(--color-btn);
-    margin: 4%;
-    box-shadow:  inset 0 0 5px rgba(254, 254, 254, 0.25);
-    border-radius: 25%;
-  }
-  
-  .other-contact a img:hover {
-    transform: scale(110%);
-    box-shadow:  0 0 20px rgba(0, 0, 0, 0.476);
-    background-color: var(--color-dark);
-    border-radius: 25%;
-  }
-  
+
+* {
+  transition: all ease-in-out 300ms;
+}
+
+/* ----- FORM CONTAINER ---- */
+.card-form {
+  margin-top: 5%;
+  padding: 0 5%;
+  background-color: transparent !important;
+  height: 90vh;
+}
+
+ /* ----- LINKS CONTAINER ---- */
+.other-contact {
+  margin-top: 5%;
+}
+
+/* ----- LINKS ---- */
+.other-contact a img:hover,
+.other-contact a img:active {
+  transform: scale(120%);
+  border-radius: 10%;
+  transition: all ease-in-out 300ms;
+}
+
+ /* ----- SEND FORM BUTTON ---- */
+#enviar-form {
+  background-color: var(--color-primary) !important;
+}
+
+
+
+
+/* ==========================================
+  ============== INPUTS & LABELS ============= */
+  /* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/* label color */
+.input-field label {
+  color: #595656;
+}
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #000;
+}
+
+/* label underline focus color */
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus {
+  border-bottom: 1px solid #ff0000 !important;
+  box-shadow: 0 1px 0 0 #ff0000 !important;
+}
+
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}

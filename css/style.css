@@ -1,21 +1,27 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
+
+ /* ==========================================
+  ================= IMPORTS ================= */
+
+
+
+
+ /* ==========================================
+  ============== CSS VARIABLES ============= */
 :root {
   --bkg: #eff9ea;
   --color-primary: #273e41;
   --color-secondry: #1887b8;
-  --color-btn: #1887b8;
+  --color-btn: #1e88e5;
   --color-info: #1887b8;
   --color-dark: #ffffff;
   --color-light: #ffffff;
 }
 
+
+
+ /* ==========================================
+  ============== BODY ============= */
 body {
   background: var(--bkg);
 }
@@ -25,9 +31,13 @@ body {
 }
 
 footer.page-footer {
-  margin: 0;
+  margin: 10% 0 0 0;
 }
 
+
+
+ /* ==========================================
+  ============== NAV ============= */
 .nav * {
   margin: 0;
 }
@@ -37,6 +47,26 @@ footer.page-footer {
   background-color: transparent;
 }
 
+.sidebar {
+  background-color: var(--color-light);
+}
+
+.sidebar li a {
+  color: var(--color-btn);
+}
+
+
+
+
+/* ==========================================
+  ============== MATERIALIZE ============= */
+  /* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com*/
+
 .icon-block {
   padding: 0 15px;
 }
@@ -44,7 +74,14 @@ footer.page-footer {
 .icon-block .material-icons {
   font-size: inherit;
 }
+/* ========================================= */
 
+
+
+
+
+ /* ==========================================
+  ============== HERO ============= */
 .pic-container {
   display: flex;
   align-items: start;
@@ -79,32 +116,16 @@ footer.page-footer {
   background-color: var(--color-btn);
 }
 
+.btn-contact:hover {
+  background-color: var(--color-primary);
+}
+
+
+
+
+ /* ==========================================
+  ============== FLOAT BUTTON ============= */
 .oculto {
   display: none;
-}
-
-/* ===================================
-  ======= CONTACT PAGE ================= */
-
-.card-form {
-  margin-top: 5%;
-  height: 100vh;
-  padding: 0 5%;
-  background-color: rgba(255, 255, 255, 0.718);
-}
-
-.other-contact {
-  margin-top: 2%;
-  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.576);
-}
-
-.other-contact a {
-  margin: 4%;
-}
-
-.other-contact a img:hover {
-  transform: scale(105%);
-  box-shadow: inset 0 0 5px rgba(254, 254, 254, 0.25);
-  background-color: rgba(48, 0, 42, 0.397);
-  border-radius: 50%;
+  background-color:  var(--color-btn);
 }

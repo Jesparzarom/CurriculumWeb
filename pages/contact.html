@@ -1,169 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+  <!-- ==================== METAS ======================= -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto</title>
-
-  <!-- =========== FAVICON =============== -->
+  
+  <!-- ==================== FAVICON ======================= -->
   <link rel="icon" type="image/png" href="../images/ico/contact.png" />
 
-  <!--========================== CSS =========================-->
+  <!--======================== CSS ========================-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="../css/contact.css">
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
+  <!--===================== TITLE =========================-->
+  <title>Contacto</title>
 
 </head>
 
 <body>
-  <nav class="nav" role="navigation">
+
+  <!-- ==================== NAVBAR ======================= -->
+  <nav class="nav transparent z-depth-0 container" role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="brand-logo right indigo-text text-lighten-2">Python Developer</a>
+      <a id="logo-container" href="#" class="brand-logo right nav-sub">John Pandas</a>
       <ul class="left hide-on-med-and-down">
         <li><a class="waves-effect link" href="../index.html">Inicio</a></li>
-        <li><a class="waves-effect link" href="badges.html">Sobre Mí</a></li>
-        <li>
-          <a class="waves-effect link" href="collapsible.html">Educación</a>
-        </li>
+        <li><a class="waves-effect link" href="./formation.html">Educación</a></li>
         <li>
           <a class="waves-effect link" href="./experience.html">Experiencia</a>
         </li>
-        <li><a class="waves-effect link" href="#">Contacto</a></li>
+        <li><a class="waves-effect link" href="./contact.html">Contacto</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav indigo darken-4">
+      <!-- ============= SIDEBAR (MOBILE) ======================= -->
+      <ul id="nav-mobile" class="sidenav sidebar">
         <li><a href="#!">MENU</a></li>
         <li>
           <div class="divider"></div>
         </li>
         <li><a class="subheader">JOHN PANDAS</a></li>
         <li><a class="waves-effect" href="../index.html">Inicio</a></li>
-        <li><a class="waves-effect" href="">Sobre Mí</a></li>
-        <li><a class="waves-effect" href="">Educación</a></li>
+        <li><a class="waves-effect" href="./formation.html">Educación</a></li>
         <li><a class="waves-effect" href="./experience.html">Experiencia</a></li>
-        <li><a class="waves-effect " href="">Contacto</a></li>
+        <li><a class="waves-effect " href="./contact.html">Contacto</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-  <main class="container">
-    <div class="row">
-      <h5 class="white-text center black">CONTACTO</h5>
 
-      <div class="col l3 m12 s12 center">
-          <div class="center card">
+
+  <!-- =============== MAIN CONTENT ===================== -->
+  <main class="">
+    <div class="row center container">
+      <h4 class=" center">CONTACTO</h4>
+
+      <!------------------ CONTACT LINKS ---------------------->
+      <div class="col l12 m12 s12 center center-align container">
+          <div class="center container">
             <div class="row center other-contact">
-              <div class="col s6 m12">
-                <h6>LLamada</h6>
-                <a class="" href="tel:XXX-XXX-XXXX" target="
-                "><img class="pulse" src="../images/ico/call.png" alt=""></a>
+              <div class="col s3 m3">
+                <a class="center" href="tel:XXX-XXX-XXXX" target="
+                "><img class="center" src="../images/ico/call.png" alt=""></a>
               </div>
-              <div class="col s6 m12">
-                <h6>Whatsapp</h6>
-                <a class="" href=" https://wa.me/+1100000000" target="
-                "><img class="" src="../images/ico/whatsapp.png" alt=""></a>
+              <div class="col s3 m3">
+                <a class="center" href=" https://wa.me/+1100000000" target="
+                "><img class="center" src="../images/ico/whatsapp.png" alt=""></a>
               </div>
-            </div>
+              <div class="col s3 m3">
+                <a class="" href="https://twitter.com/search?q=develop&src=typed_query&f=top" target="
+                "><img class="" src="../images/ico/twitter.png" alt=""></a>
+              </div>
+              <div class="col s3 m3">
+                <a class="" href="https://www.linkedin.com/" target="
+                "><img class="" src="../images/ico/linkedin.png" alt=""></a>
+              </div>
           </div>
-
+        </div>
       </div>
 
-      <div class="col l9 m12 s12 card center">
-        <div class="center">
-          <div class="col s12 center other-contact">
-            <h5 class="center">FORMULARIO</h5>
-        <form class="col s12" id="form">
-          
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <i class="material-icons prefix">person</i>
-              <input id="first_name" type="text" class="validate" />
-              <label for="first_name">Nombre</label>
+      <!------------------ CONTACT FORM ---------------------->
+      <div class="container col l12 m12 s12 card-form center">
+        <h6 class="center">FORMULARIO</h6>
+        <div class="center other-contact container">
+
+          <form class="col s12 center" id="form">
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">person</i>
+                <input id="first_name" type="text" class="validate" />
+                <label for="first_name">Nombre</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Apellido</label>
+              </div>
             </div>
-            <div class="input-field col s12 m6">
-              <i class="material-icons prefix">account_circle</i>
-              <input id="last_name" type="text" class="validate" />
-              <label for="last_name">Apellido</label>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mail</i>
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">mail</i>
-              <input id="email" type="email" class="validate" />
-              <label for="email">Email</label>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea type="text" id="icon_prefix2" class="materialize-textarea" maxlength="250"></textarea>
+                <label for="icon_prefix2">Mensaje breve</label>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="icon_prefix2" class="materialize-textarea" maxlength="250"></textarea>
-              <label for="icon_prefix2">Mensaje breve</label>
-            </div>
-          </div>
 
           <div class="card-action center">
-            <a class="btn center pink darken-4 waves-effect  hoverable" id="enviar-form">Enviar mensaje</a>
+            <a class="btn center waves-effect  hoverable" id="enviar-form">Enviar mensaje</a>
           </div>
         </form>
+        
       </div>
     </div>
   </main>
 
-  <footer class="page-footer transparent">
 
-  </footer>
-
-  <div class="footer-copyright">
-    <div class="container center">
-      Design by Juan Esparza R.
-    </div>
-    <div class="container center">
-      powered by
-      <a class="orange-text text-lighten-3" href="http://materializecss.com"
-        >Materialize</a
-      >
-      <a class="orange-text text-lighten-3" href="http://materializecss.com"
-      >& Jquery</a
-    >
-    </div>
-
-
-
-
-
-
-
-
+  <!-- ========== FLOATING BUTTON ======================= -->
   <div class="oculto fixed-action-btn" id="floatbtn">
-    <a class="btn-floating btn-large pink darken-4 pulse">
+    <a class="btn-floating btn-large blue lighten-1 pulse">
       <i class="large material-icons">widgets</i>
     </a>
     <ul>
       <li>
-        <a a href="../index.html" class="btn-floating red" class="btn-floating red"><i
-            class="material-icons">face</i></a>
+        <a href="../index.html" class="btn-floating red"
+          ><i class="material-icons">face</i></a
+        >
       </li>
       <li>
-        <a class="btn-floating yellow darken-1"><i class="material-icons">school</i></a>
+        <a href="formation.html"   class="btn-floating yellow darken-1"
+          ><i class="material-icons">school</i></a
+        >
       </li>
       <li>
-        <a class="btn-floating green"><i class="material-icons">work</i></a>
+        <a href="experience.html"  class="btn-floating green"><i class="material-icons">work</i></a>
       </li>
       <li>
-        <a class="btn-floating blue"><i class="material-icons">mail</i></a>
+        <a href="contact.html" class="btn-floating blue"
+          ><i class="material-icons">mail</i></a
+        >
       </li>
     </ul>
   </div>
 
-  <!--  Scripts-->
+
+  <!-- =================== FOOTER ======================= -->
+  <footer class="page-footer transparent">
+    <div class="footer-copyright">
+      <div class="container center text-black">
+        Design by Juan Esparza R.
+      </div>
+      <div class="container center">
+        powered by
+        <a class="orange-text text-lighten-3" href="http://materializecss.com"
+          >Materialize</a
+        >
+        <a class="orange-text text-lighten-3" href="http://materializecss.com"
+        >& Jquery</a
+      >
+      </div>
+  </footer>
+
+<!--SCRIPTS-->
+<!--#region-->
   <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="../js/materialize.js"></script>
   <script type="text/javascript" src="../js/init.js"></script>
   <script type="text/javascript" src="../js/form.js"></script>
+<!--#endregion-->
+
 </body>
 
 </html>
