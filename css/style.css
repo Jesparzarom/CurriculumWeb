@@ -1,42 +1,51 @@
-
-
- /* ==========================================
+/* ==========================================
   ================= IMPORTS ================= */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700&display=swap");
 
-
-
-
- /* ==========================================
+/* ==========================================
   ============== CSS VARIABLES ============= */
 :root {
+  --cur-arrow: url("../images/ico/arrow.png");
+  --cur-point: url("../images/ico/pointer.png");
+
   --bkg: #eff9ea;
-  --color-primary: #273e41;
+
+  --color-primary: #232f49;
   --color-secondry: #1887b8;
-  --color-btn: #1e88e5;
-  --color-info: #1887b8;
-  --color-dark: #ffffff;
+  --color-accent: #26a69a;
   --color-light: #ffffff;
+
+  --font-raleway: 'Raleway', sans-serif;
+  --font-robofx: 'Roboto Flex', sans-serif;
 }
 
-
-
- /* ==========================================
+/* ==========================================
   ============== BODY ============= */
 body {
   background: var(--bkg);
+  font-family: var(--font-raleway);
 }
 
 * {
-  cursor: url("../images/ico/icons8-blue-pointer-50.png"), auto !important;
+  cursor: var(--cur-arrow), auto !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-robofx);
+  font-weight: bolder;
 }
 
 footer.page-footer {
   margin: 10% 0 0 0;
 }
 
+footer a,
+.btn {
+  cursor: var(--cur-point), auto !important;
+}
 
 
- /* ==========================================
+/* ==========================================
   ============== NAV ============= */
 .nav * {
   margin: 0;
@@ -52,15 +61,12 @@ footer.page-footer {
 }
 
 .sidebar li a {
-  color: var(--color-btn);
+  color: var(--color-primary);
 }
-
-
-
 
 /* ==========================================
   ============== MATERIALIZE ============= */
-  /* Custom Stylesheet */
+/* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -76,11 +82,7 @@ footer.page-footer {
 }
 /* ========================================= */
 
-
-
-
-
- /* ==========================================
+/* ==========================================
   ============== HERO ============= */
 .pic-container {
   display: flex;
@@ -89,7 +91,7 @@ footer.page-footer {
 }
 
 .profile-pic {
-  margin-top: 70px;
+  margin-top: 20px;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -103,29 +105,82 @@ footer.page-footer {
 }
 
 .title {
-  font-size: 100px;
+  color: var(--color-primary);
+  font-family: var(--font-robofx);
+  font-size: 120px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
+
 .link {
-  color: var(--color-btn);
+  color: var(--color-secondry);
+  cursor: var(--cur-point), auto !important;
 }
 
 .btn-contact {
-  background-color: var(--color-btn);
+  background-color: var(--color-secondry);
+  cursor: var(--cur-point), auto !important;
 }
 
 .btn-contact:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+/* ==========================================
+  ============== FLOAT BUTTON ============= */
+.oculto {
+  display: none;
+  cursor: var(--cur-point), auto !important;
+}
+
+.btn-float {
+  background-color: var(--color-primary) !important;
+  cursor: var(--cur-point), auto !important;
 }
 
 
 
+/* MAIN */
 
- /* ==========================================
-  ============== FLOAT BUTTON ============= */
-.oculto {
-  display: none;
-  background-color:  var(--color-btn);
+/* ABOUT */
+.about-text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.section-about {
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profession {
+  color: var(--color-accent) !important;
+}
+
+.ghrepo {
+  cursor: var(--cur-point), auto !important;
+}
+
+.ghrepo:hover {
+  background-color: rgba(255, 255, 255, 0.379);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.648);
+}
+
+
+@media screen and (max-width: 440px) {
+  .title {
+    font-size: 100px;
+  }
+
+  .about-text {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: justify;
+  }
 }

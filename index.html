@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <!--========================== META =========================-->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!--========================== FAVICON =========================-->
-        <link rel="icon" type="image/png" href="./images/ico/Graphicloads-Flat-Finance-Person.256.png"/>
-
-
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/ico/Graphicloads-Flat-Finance-Person.256.png"
+    />
 
     <!--========================== TITLE =========================-->
     <title>John Pandas</title>
-    
+
     <!--========================== CSS =========================-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -35,36 +33,49 @@
       rel="stylesheet"
       media="screen,projection"
     />
-
-
   </head>
 
   <body>
     <nav class="nav container transparent z-depth-0" role="navigation">
       <div class="nav-wrapper">
-        <a
-          id="logo-container"
-          href="#"
-          class="brand-logo right indigo-text text-lighten-2"
+        <a id="logo-container" href="#" class="brand-logo right profession"
           >Python Developer</a
         >
         <ul class="left hide-on-med-and-down">
-          <li><a class="waves-effect link" href="./index.html">Resume</a></li>
-          <li><a class="waves-effect link" href="./pages/formation.html">Educación</a></li>
+          <li><a class="waves-effect link" href="./index.html">Inicio</a></li>
           <li>
-            <a class="waves-effect link" href="./pages/experience.html">Experiencia</a>
+            <a class="waves-effect link" href="./pages/formation.html"
+              >Educación</a
+            >
           </li>
-          <li><a class="waves-effect link" href="./pages/contact.html">Contacto</a></li>
+          <li>
+            <a class="waves-effect link" href="./pages/experience.html"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a class="waves-effect link" href="./pages/contact.html"
+              >Contacto</a
+            >
+          </li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav sidebar">
           <li><a href="#!">MENU</a></li>
           <li><div class="divider"></div></li>
           <li><a class="subheader">JOHN PANDAS</a></li>
-          <li><a class="waves-effect" href="./index.html">Resume</a></li>
-          <li><a class="waves-effect" href="./pages/formation.html">Educación</a></li>
-          <li><a class="waves-effect" href="./pages/experience.html">Experiencia</a></li>
-          <li><a class="waves-effect" href="./pages/contact.html">Contacto</a></li>
+          <li><a class="waves-effect" href="./index.html">Inicio</a></li>
+          <li>
+            <a class="waves-effect" href="./pages/formation.html">Educación</a>
+          </li>
+          <li>
+            <a class="waves-effect" href="./pages/experience.html"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a class="waves-effect" href="./pages/contact.html">Contacto</a>
+          </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
@@ -72,10 +83,12 @@
       </div>
     </nav>
 
-    <hero class="hero center ">
+    <hero class="hero center">
       <div class="pic-containter center" id="logo-container">
         <img
-          class="profile-pic center brand-logo hoverable" data-position="bottom" data-tooltip="I am a tooltip"
+          class="profile-pic center brand-logo hoverable"
+          data-position="bottom"
+          data-tooltip="I am a tooltip"
           src="./images/img/laptop-g1a5c4705f_640.jpg"
           alt=""
         />
@@ -94,14 +107,72 @@
       </div>
     </hero>
 
-    <main class="container">
-      <div class="section border">
-        <!--   Icon Section   -->
-        <div class="row">
+    <main class="center">
+      <!--   SECCIÓN SOBRE MI  -->
+      <section class="section section-about border white z-depth-2">
+        <div class="row container">
+          <div class="col s12 m12">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-1">
+                <i class="material-icons">badge</i>
+              </h2>
+              <h5 class="center">Sobre mí</h5>
+
+              <p class="about-text">
+                Me encanta trabajar en proyectos desafiantes que me permitan
+                explorar nuevas tecnologías y solucionar problemas complejos de
+                manera eficiente. Además, disfruto colaborando con otros
+                desarrolladores para crear soluciones innovadoras que puedan
+                marcar la diferencia. Siempre estoy abierto a nuevas
+                oportunidades y desafíos, ¡así que no dudes en contactarme si
+                quieres hablar sobre un proyecto emocionante!
+              </p>
+            </div>
+          </div>
+
           <div class="col s12 m6">
             <div class="icon-block">
+              <h2 class="center teal-text text-lighten-1">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">User Experience Focused</h5>
+
+              <p class="light">
+                By utilizing elements and principles of Material Design, we were
+                able to create a framework that incorporates components and
+                animations that provide more feedback to users. Additionally, a
+                single underlying responsive system across all platforms allow
+                for a more unified user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-1">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">Easy to work with</h5>
+
+              <p class="light">
+                We have provided detailed documentation as well as specific code
+                examples to help new users get started. We are also always open
+                to feedback and can answer any questions a user may have about
+                Materialize.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--   SECCIÓN EDUCACIÓN Y EXPERIENCIA -->
+      <section class="border container">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="icon-block">
               <h2 class="center light-blue-text">
-                <i class="material-icons">flash_on</i>
+                <i class="material-icons">badge</i>
               </h2>
               <h5 class="center">Speeds up development</h5>
 
@@ -114,7 +185,7 @@
             </div>
           </div>
 
-          <div class="col s12 m3">
+          <div class="col s12 m6">
             <div class="icon-block">
               <h2 class="center light-blue-text">
                 <i class="material-icons">group</i>
@@ -131,7 +202,7 @@
             </div>
           </div>
 
-          <div class="col s12 m3">
+          <div class="col s12 m6">
             <div class="icon-block">
               <h2 class="center light-blue-text">
                 <i class="material-icons">settings</i>
@@ -147,67 +218,88 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!--   SECCIÓN SKILLS-->
+      <section class="section z-depth-2">adfsgdfhjmj,k</section>
     </main>
 
-    <footer class="page-footer footer">
+    <footer class="page-footer footer blue-grey darken-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
+            <h5 class="white-text">John Pandas</h5>
             <p class="grey-text text-lighten-4">
-              We are a team of college students working on this project like
-              it's our full time job. Any amount would help support and continue
-              development on this project and is greatly appreciated.
+              Gracias por interesarte en mi currículum. Cualquier consulta estoy
+              a disposición. ¡No dudes en contactarme en cualquiera de mis
+              métodos de contacto!
             </p>
           </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Settings</h5>
+          <div class="col l3 s6">
+            <h5 class="white-text">Navegación</h5>
             <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
+              <li><a class="white-text" target="_blank" href="./index.html">Inicio</a></li>
+              <li><a class="white-text" target="_blank" href="./pages/formation.html">Formación</a></li>
+              <li><a class="white-text" target="_blank" href="./pages/experience.html">Experiencia</a></li>
+              <li><a class="white-text" target="_blank" href="./pages/contact.html">Contacto</a></li>
             </ul>
           </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
+          <div class="col l3 s6">
+            <h5 class="white-text">Conectemos</h5>
             <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
+              <li><a class="white-text" href="tel:XXX-XXX-XXXX">Teléfono</a></li>
+              <li><a class="white-text" href="./pages/contact.html#mailme">Mail</a></li>
+              <li><a class="white-text" href="https://wa.me/+1100000000">whatsapp</a></li>
+              <li><a class="white-text" href="https://twitter.com/search?q=develop&src=typed_query&f=top" target="_blank">Twitter</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          Made by
-          <a class="orange-text text-lighten-3" href="http://materializecss.com"
-            >Materialize</a
+      <div class="footer-copyright center">
+        <div class="container center">
+          Powered by 
+          <a class="pink-text text-lighten-1" href="http://materializecss.com"
+            >Materialize
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright center">
+        <div class="container center">
+          Design by
+          <a class="blue-text text-darken-2" href=""
+            >J.P. Esparza</a
+          >
+        </div>
+      </div>
+      <div class="footer-copyright center">
+        <div class="container center">
+          <p class="amber-text text-daken-2">Repo del proyecto</p>
+          <a class="" href="https://github.com/Jesparzarom/CurriculumWeb"
+            ><img src="./images/ico/github.png" width="100px" alt="" class="ghrepo"></a
           >
         </div>
       </div>
     </footer>
 
     <div class="oculto fixed-action-btn" id="floatbtn">
-      <a class="btn-floating btn-large blue darken-2 pulse">
+      <a class="btn-floating btn-large pulse btn-float">
         <i class="large material-icons">widgets</i>
       </a>
       <ul>
         <li>
           <a href="./index.html" class="btn-floating red"
-            ><i class="material-icons">face</i></a
+            ><i class="material-icons">home</i></a
           >
         </li>
         <li>
-          <a href="./pages/formation.html"   class="btn-floating yellow darken-1"
+          <a href="./pages/formation.html" class="btn-floating yellow darken-1"
             ><i class="material-icons">school</i></a
           >
         </li>
         <li>
-          <a href="./pages/experience.html"  class="btn-floating green"><i class="material-icons">work</i></a>
+          <a href="./pages/experience.html" class="btn-floating green"
+            ><i class="material-icons">work</i></a
+          >
         </li>
         <li>
           <a href="/pages/contact.html" class="btn-floating blue"

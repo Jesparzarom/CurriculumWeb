@@ -12,8 +12,8 @@
   <!--======================== CSS ========================-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/contact.css">
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   
   <!--===================== TITLE =========================-->
   <title>Contacto</title>
@@ -25,14 +25,22 @@
   <!-- ==================== NAVBAR ======================= -->
   <nav class="nav transparent z-depth-0 container" role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="brand-logo right nav-sub">John Pandas</a>
+      <a id="logo-container" href="#" class="brand-logo right profession"
+        >John Pandas</a
+      >
       <ul class="left hide-on-med-and-down">
         <li><a class="waves-effect link" href="../index.html">Inicio</a></li>
-        <li><a class="waves-effect link" href="./formation.html">Educación</a></li>
         <li>
-          <a class="waves-effect link" href="./experience.html">Experiencia</a>
+          <a class="waves-effect link" href="./formation.html">Educación</a>
         </li>
-        <li><a class="waves-effect link" href="./contact.html">Contacto</a></li>
+        <li>
+          <a class="waves-effect link" href="./experience.html"
+            >Experiencia</a
+          >
+        </li>
+        <li>
+          <a class="waves-effect link" href="./contact.html">Contacto</a>
+        </li>
       </ul>
 
       <!-- ============= SIDEBAR (MOBILE) ======================= -->
@@ -44,10 +52,14 @@
         <li><a class="subheader">JOHN PANDAS</a></li>
         <li><a class="waves-effect" href="../index.html">Inicio</a></li>
         <li><a class="waves-effect" href="./formation.html">Educación</a></li>
-        <li><a class="waves-effect" href="./experience.html">Experiencia</a></li>
-        <li><a class="waves-effect " href="./contact.html">Contacto</a></li>
+        <li>
+          <a class="waves-effect" href="./experience.html">Experiencia</a>
+        </li>
+        <li><a class="waves-effect" href="./contact.html">Contacto</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
     </div>
   </nav>
 
@@ -56,28 +68,39 @@
   <!-- =============== MAIN CONTENT ===================== -->
   <main class="">
     <div class="row center container">
-      <h4 class=" center">CONTACTO</h4>
+      <h3 class=" center">CONTACTO</h3>
 
       <!------------------ CONTACT LINKS ---------------------->
       <div class="col l12 m12 s12 center center-align container">
           <div class="center container">
             <div class="row center other-contact">
+
               <div class="col s3 m3">
                 <a class="center" href="tel:XXX-XXX-XXXX" target="
                 "><img class="center" src="../images/ico/call.png" alt=""></a>
+                <p>LLamar</p>
               </div>
+
+              <div class="col s3 m3">
+
+                <a class="" href="mailto:correo@example.com?subject=Me interesa tu CV&" 
+                target="" id="mailme">
+                <img class="" src="../images/ico/mailme.png" alt="">
+              </a><p>Mail</p>
+              </div>
+
               <div class="col s3 m3">
                 <a class="center" href=" https://wa.me/+1100000000" target="
                 "><img class="center" src="../images/ico/whatsapp.png" alt=""></a>
+                <p>whatsapp</p>
               </div>
+
               <div class="col s3 m3">
                 <a class="" href="https://twitter.com/search?q=develop&src=typed_query&f=top" target="
                 "><img class="" src="../images/ico/twitter.png" alt=""></a>
+                <p>twitter</p>
               </div>
-              <div class="col s3 m3">
-                <a class="" href="https://www.linkedin.com/" target="
-                "><img class="" src="../images/ico/linkedin.png" alt=""></a>
-              </div>
+
           </div>
         </div>
       </div>
@@ -87,7 +110,7 @@
         <h6 class="center">FORMULARIO</h6>
         <div class="center other-contact container">
 
-          <form class="col s12 center" id="form">
+          <form class="col s12" id="form">
             <div class="row">
               <div class="input-field col s12 m6">
                 <i class="material-icons prefix">person</i>
@@ -118,7 +141,11 @@
             </div>
 
           <div class="card-action center">
-            <a class="btn center waves-effect  hoverable" id="enviar-form">Enviar mensaje</a>
+            <a 
+            class="btn center waves-effect hoverable btn-large center" 
+            id="enviar-form">
+            Enviar mensaje
+          </a>
           </div>
         </form>
         
@@ -129,13 +156,13 @@
 
   <!-- ========== FLOATING BUTTON ======================= -->
   <div class="oculto fixed-action-btn" id="floatbtn">
-    <a class="btn-floating btn-large blue lighten-1 pulse">
+    <a class="btn-floating btn-large btn-float pulse">
       <i class="large material-icons">widgets</i>
     </a>
     <ul>
       <li>
         <a href="../index.html" class="btn-floating red"
-          ><i class="material-icons">face</i></a
+          ><i class="material-icons">home</i></a
         >
       </li>
       <li>
@@ -156,20 +183,61 @@
 
 
   <!-- =================== FOOTER ======================= -->
-  <footer class="page-footer transparent">
-    <div class="footer-copyright">
-      <div class="container center text-black">
-        Design by Juan Esparza R.
+  <footer class="page-footer footer blue-grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">John Pandas</h5>
+          <p class="grey-text text-lighten-4">
+            Gracias por interesarte en mi currículum. Cualquier consulta estoy
+            a disposición. ¡No dudes en contactarme en cualquiera de mis
+            métodos de contacto!
+          </p>
+        </div>
+        <div class="col l3 s6">
+          <h5 class="white-text">Navegación</h5>
+          <ul>
+            <li><a class="white-text" target="_blank" href="../index.html">Inicio</a></li>
+            <li><a class="white-text" target="_blank" href="./formation.html">Formación</a></li>
+            <li><a class="white-text" target="_blank" href="./experience.html">Experiencia</a></li>
+            <li><a class="white-text" target="_blank" href="./contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s6">
+          <h5 class="white-text">Conectemos</h5>
+          <ul>
+            <li><a class="white-text" href="tel:XXX-XXX-XXXX">Teléfono</a></li>
+            <li><a class="white-text" href="#mailme">Mail</a></li>
+            <li><a class="white-text" href="https://wa.me/+1100000000">whatsapp</a></li>
+            <li><a class="white-text" href="https://twitter.com/search?q=develop&src=typed_query&f=top" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="footer-copyright center">
       <div class="container center">
-        powered by
-        <a class="orange-text text-lighten-3" href="http://materializecss.com"
-          >Materialize</a
-        >
-        <a class="orange-text text-lighten-3" href="http://materializecss.com"
-        >& Jquery</a
-      >
+        Powered by 
+        <a class="pink-text text-lighten-1" href="http://materializecss.com"
+          >Materialize
+        </a>
       </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container center">
+        Design by
+        <a class="blue-text text-darken-2" href=""
+          >J.P. Esparza</a
+        >
+      </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container center">
+        <p class="amber-text text-daken-2">Repo del proyecto</p>
+        <a class="" href="https://github.com/Jesparzarom/CurriculumWeb" target="_blank"
+          ><img src="../images/ico/github.png" width="100px" alt="" class="ghrepo"></a
+        >
+      </div>
+    </div>
   </footer>
 
 <!--SCRIPTS-->
