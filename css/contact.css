@@ -1,26 +1,26 @@
 /* ==========================================
   ================= IMPORTS ================= */
-@import url("style.css");
+@import url("./style.css");
 
 
 
 
 /* ==========================================
   ============== CSS VARIABLES ============= */
-:root {
-  --bkg: #eff9ea;
-  --color-primary: #202c44;
-  --color-secondary: #1887b8;
-  --color-btn: #202c44;
-  --color-dark: #181711;
-  --color-ligth: white;
-  --color-succes: #0a9d49;
-  --color-warning: #e8c60c;
-  --color-danger: #f0042b;
-}
-
-
-
+  :root {
+    --bkg: #eff9ea;
+    
+    --cur-arrow: url("../images/ico/arrow.png");
+    --cur-point: url("../images/ico/pointer.png");
+  
+    --color-primary: #232f49;
+    --color-secondry: #1887b8;
+    --color-accent: #26a69a;
+    --color-light: #ffffff;
+  
+    --font-raleway: 'Raleway', sans-serif;
+    --font-robofx: 'Roboto Flex', sans-serif;
+  }
 
 /* ==========================================
   ============ CONTACT PAGE ================= */
@@ -38,21 +38,33 @@
 }
 
  /* ----- LINKS CONTAINER ---- */
-.other-contact {
+.other-contact a img {
   margin-top: 5%;
 }
 
 /* ----- LINKS ---- */
 .other-contact a img:hover,
-.other-contact a img:active {
-  transform: scale(120%);
-  border-radius: 10%;
+.other-contact a img:active,
+.other-contact a img::after {
+  border-radius: 15%;
   transition: all ease-in-out 300ms;
+  background-color: var(--color-ligth);
+  box-shadow: 
+    inset 0 0 5px 0px rgba(0, 0, 0, 0.437),
+     0 0 15px 0px rgba(255, 252, 252, 0.641);
+  transform: rotate(5deg) !important;
+  cursor: var(--cur-point), auto !important;
 }
 
  /* ----- SEND FORM BUTTON ---- */
 #enviar-form {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-secondry) !important;
+}
+
+#enviar-form:hover,
+#enviar-form:active {
+  background-color: var(--color-accent) !important;
+  color: rgba(white) !important;
 }
 
 
@@ -69,34 +81,28 @@
  */
 /* label color */
 .input-field label {
-  color: #595656;
+  color: var(--color-secondry);
+}
+
+
+.prefix {
+  color: var(--color-primary);
 }
 
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: #000;
+  color: var(--color-secondry);
 }
 
-/* label underline focus color */
-.input-field input[type="text"]:focus,
-.input-field input[type="email"]:focus {
-  border-bottom: 1px solid #ff0000 !important;
-  box-shadow: 0 1px 0 0 #ff0000 !important;
-}
 
-/* valid color */
-.input-field input[type="text"].valid {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
-}
 
-/* invalid color */
-.input-field input[type="text"].invalid {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
-}
 
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #000;
+  color: var(--color-secondry);
+}
+
+
+.link {
+  color: var(--color-secondry) !important;
 }
