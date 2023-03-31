@@ -7,7 +7,7 @@ $(document).ready(function() {
       var mensaje = $('#icon_prefix2').val();
   
       // Crear una cadena de consulta con los valores del formulario
-      var queryString = 'subject=' + encodeURIComponent('Mensaje desde el sitio web');
+      var queryString = 'subject=' + encodeURIComponent(nombre + " "+ apellido + ': Contacto Web');
       queryString += '&body=' + encodeURIComponent('Nombre: ' + nombre + '\nApellido: ' + apellido +  '\nEmail: ' + email + '\nMensaje: ' + mensaje);
   
       // Abrir el cliente de correo electrónico con los datos prellenados

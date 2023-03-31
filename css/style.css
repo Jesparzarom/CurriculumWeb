@@ -11,9 +11,9 @@
   --bkg: #eff9ea;
 
   --color-primary: #232f49;
-  --color-secondry: #1887b8;
-  --color-accent: #26a69a;
+  --color-accent: #ffd740;
   --color-light: #ffffff;
+  --color-prim-overlay: #232f497c;
 
   --font-raleway: 'Raleway', sans-serif;
   --font-robofx: 'Roboto Flex', sans-serif;
@@ -33,6 +33,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-robofx);
   font-weight: bolder;
+}
+
+p {
+  color: var(--color-primary);
 }
 
 footer.page-footer {
@@ -114,17 +118,20 @@ footer a,
 
 
 .link {
-  color: var(--color-secondry);
+  color: var(--color-primary);
   cursor: var(--cur-point), auto !important;
+  font-family: var(--font-robofx);
 }
 
 .btn-contact {
-  background-color: var(--color-secondry);
+  background-color: var(--color-accent);
   cursor: var(--cur-point), auto !important;
+  color: var(--color-primary);
 }
 
 .btn-contact:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 /* ==========================================
@@ -141,7 +148,8 @@ footer a,
 
 
 
-/* MAIN */
+/* ==========================================
+  ============== INDEX MAIN ============= */
 
 /* ABOUT */
 .about-text {
@@ -158,7 +166,12 @@ footer a,
 }
 
 .profession {
-  color: var(--color-accent) !important;
+  text-transform: uppercase;
+  font-family: var(--font-robofx);
+  color: var(--color-primary) !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  color: var(--color-prim-overlay);
 }
 
 .ghrepo {
@@ -171,6 +184,51 @@ footer a,
   box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.648);
 }
 
+
+
+/* ==========================================
+  ============== FORMATION MAIN ============= */
+.formal {
+  font-size: 12px;
+}
+
+.title-name {
+  font-size: 18px;
+  color: rgb(7, 53, 90) !important;
+  cursor: var(--cur-point), auto !important;
+  font-family: var(--font-robofx);
+}
+
+.curso:hover,
+.curso:active,
+.cursos div ul:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light) !important;
+  border-radius: 5px;
+  transform: scale(105%);
+  transition: all 100ms;
+}
+
+.formal ul {
+  cursor: var(--cur-point), auto !important;
+}
+
+.formal:hover,
+.formal-section div ul:hover {
+  background-color: var(--color-prim-overlay);
+  color: #eff9ea !important;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================
+  ============== MEDIA SCREEN============= */
 
 @media screen and (max-width: 440px) {
   .title {
