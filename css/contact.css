@@ -5,6 +5,7 @@
 
 
 
+
 /* ==========================================
   ============== CSS VARIABLES ============= */
   :root {
@@ -14,9 +15,11 @@
     --cur-point: url("../images/ico/pointer.png");
   
     --color-primary: #232f49;
-    --color-secondry: #1887b8;
-    --color-accent: #26a69a;
+    --color-accent: #ffd740;
     --color-light: #ffffff;
+    --color-primary-overlay: #232f49b8;
+
+    --color-accent-overlay: #ffd64097;
   
     --font-raleway: 'Raleway', sans-serif;
     --font-robofx: 'Roboto Flex', sans-serif;
@@ -29,13 +32,20 @@
   transition: all ease-in-out 300ms;
 }
 
-/* ----- FORM CONTAINER ---- */
-.card-form {
-  margin-top: 5%;
-  padding: 0 5%;
-  background-color: transparent !important;
-  height: 90vh;
+h1, h2, h3, h4, h5, h6, p, li, a {
+  color: var(--color-primary) !important;
 }
+
+/* ----- FORM CONTAINER ---- */
+.card-form-form {
+  background: var(--bkg);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 70vh;
+
+}
+
+
 
  /* ----- LINKS CONTAINER ---- */
 .other-contact a img {
@@ -48,7 +58,8 @@
 .other-contact a img::after {
   border-radius: 15%;
   transition: all ease-in-out 300ms;
-  background-color: var(--color-ligth);
+  background-color: white;
+  color: var(--color-primary);
   box-shadow: 
     inset 0 0 5px 0px rgba(0, 0, 0, 0.437),
      0 0 15px 0px rgba(255, 252, 252, 0.641);
@@ -58,13 +69,13 @@
 
  /* ----- SEND FORM BUTTON ---- */
 #enviar-form {
-  background-color: var(--color-secondry) !important;
+  background-color: var(--color-accent) !important;
 }
 
 #enviar-form:hover,
 #enviar-form:active {
-  background-color: var(--color-accent) !important;
-  color: rgba(white) !important;
+  background-color: var(--color-primary) !important;
+  color: var(--color-accent) !important;
 }
 
 
@@ -81,17 +92,22 @@
  */
 /* label color */
 .input-field label {
-  color: var(--color-secondry);
+  color: grey;
+  font-size: 11px;
+}
+
+.input-field {
+  font-size: 11px;
 }
 
 
 .prefix {
-  color: var(--color-primary);
+  color: var(--bkg);
 }
 
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: var(--color-secondry);
+  color: var(--color-prim-overlay);
 }
 
 
@@ -99,10 +115,11 @@
 
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: var(--color-secondry);
+  color: var(--color-primary);
 }
 
 
 .link {
-  color: var(--color-secondry) !important;
+  color: var(--color-primary) !important;
 }
+
