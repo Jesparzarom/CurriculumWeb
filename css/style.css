@@ -184,7 +184,23 @@ footer a,
   box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.648);
 }
 
+.icon-skill {
+  font-size: 10px;
+  text-align: center;
+}
 
+.icon-skill-icon {
+  font-size: 80% !important;
+  text-align: center;
+}
+
+.hskill {
+  font-size: 13px !important;
+}
+
+.amber-waves:hover {
+  background-color: var(--color-accent);
+}
 
 /* ==========================================
   ============== FORMATION MAIN ============= */
