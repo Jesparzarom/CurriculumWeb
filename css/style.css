@@ -142,7 +142,7 @@ footer a,
 }
 
 .btn-float {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-accent) !important;
   cursor: var(--cur-point), auto !important;
 }
 

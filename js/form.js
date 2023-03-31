@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y < 600) {
+    if (y <= 10000 ) {
       $('#floatbtn').removeClass('oculto');
     } else {
       $('#floatbtn').addClass('oculto');
