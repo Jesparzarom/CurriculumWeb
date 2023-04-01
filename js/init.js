@@ -25,4 +25,3 @@ $(document).scroll(function() {
       hoverEnabled: false
     });
   });
-

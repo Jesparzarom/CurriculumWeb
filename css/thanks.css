@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700&display=swap");
+
+
+:root {
+  --font-raleway: "Raleway", sans-serif;
+  --font-robofx: "Roboto Flex", sans-serif;
+  --font-gloock: "Gloock", serif;
+}
+
+body {
+  font-family: var(--font-robofx) !important;
+}
+
+.titletop {
+  margin: 0;
+  padding: 0;
+  height: 19vh;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer {
+  width: 350px;
+}
+
+.item {
+  background-color: #ffd740 !important;
+  font-family: "Gloock", serif;
+  font-size: 40px;
+  box-shadow: inset 0 0 20px 0px #5b4d0082;
+  cursor: pointer;
+}
+
+.item span {
+  font-family: "Arial";
+  font-size: 20px;
+  color: #383632;
+}
+
+.item:hover {
+  transform: scale(105%);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.404);
+}
+
+.btn {
+  width: 100px;
+}
+
+.thanks h1 {
+  font-family: var(--font-gloock) !important;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: 0 0 1px rgb(255, 247, 0), 0 0 50px rgb(116, 114, 50);
+}
+
+.gen-title h1 {
+  margin-bottom: -10px;
+}
+
+.gen-title {
+  margin-bottom: 20px !important;
+}

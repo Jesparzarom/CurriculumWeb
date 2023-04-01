@@ -6,14 +6,14 @@ $(document).ready(function() {
       var email = $('#email').val();
       var mensaje = $('#icon_prefix2').val();
   
-      // Crear una cadena de consulta con los valores del formulario
+      /* // Crear una cadena de consulta con los valores del formulario
       var queryString = 'subject=' + encodeURIComponent(nombre + " "+ apellido + ': Contacto Web');
       queryString += '&body=' + encodeURIComponent('Nombre: ' + nombre + '\nApellido: ' + apellido +  '\nEmail: ' + email + '\nMensaje: ' + mensaje);
   
       // Abrir el cliente de correo electrónico con los datos prellenados
       window.open('mailto:destinatario@dominio.com?' + queryString);
 
-      document.querySelector('#form').reset();
+      document.querySelector('#form').reset(); */
     });
   });
   
@@ -34,9 +34,4 @@ $(document).ready(function() {
       direction: 'top',
       hoverEnabled: false
     });
-  });
-
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
   });
